@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+      <div id="display"></div>
+      <div id="operatorDisp"></div>
+      <button type="button" onclick="input('9')">9</button>
+      <button type="button" onclick="input('8')">8</button>
+      <button type="button" onclick="input('7')">7</button>
+      <button type="button" class="operation" onclick="operation('+')">+</button>
+      <button type="button" onclick="input('6')">6</button>
+      <button type="button" onclick="input('5')">5</button>
+      <button type="button" onclick="input('4')">4</button>
+      <button type="button" class="operation" onclick="operation('-')">-</button>
+      <button type="button" onclick="input('3')">3</button>
+      <button type="button" onclick="input('2')">2</button>
+      <button type="button" onclick="input('1')">1</button>
+      <button type="button" class="operation" onclick="operation('*')">*</button>
+      <button type="button" id="decimal" onclick="input('.')">.</button>
+      <button type="button" onclick="input('0')">0</button>
+      <button type="button" id="clear" onclick="allClear()">AC</button>
+      <button type="button" class="operation" onclick="operation('/')">/</button>
+      <button type="button" id="equal" onclick="calculate()">=</button>
+
+      <script type="text/javascript" src="calculator.js"></script>
+    </div>
+  </body>
+</html>
