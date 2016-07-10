@@ -1,0 +1,61 @@
+#container{
+  width: 200px;
+  height:200px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  padding: 1px;
+  transform:rotateX(20deg) rotateY(60deg) rotateZ(50deg);
+}
+#container:hover{
+  -webkit-animation: myanim 6s infinite linear;
+}
+#cube{
+  position: relative;
+  width:100px;
+  height:100px;
+  margin:40px;
+
+}
+#cube *{
+  position: absolute;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  opacity: 0.5;
+}
+#front{
+  transform: translate3d(0px,0px,50px);
+  background-image: url("front.jpg");
+  z-index: 1;
+}
+#back{
+  transform: rotateY(180deg) translate3d(0px,0px,50px);
+  background-image: url("back.png");
+}
+#left{
+  transform: rotateY(-90deg) translate3d(0px,0px,50px);
+  background-image: url("left.png");
+}
+#right{
+  transform: rotateY(90deg) translate3d(0px,0px,50px);
+  background-image: url("right.png");
+}
+#top{
+  transform: rotateX(90deg) translate3d(0px,0px,50px);
+  background-image: url("top.png");
+}
+#bottom{
+  transform: rotateX(-90deg) translate3d(0px,0px,50px);
+  background-image: url("bottom.jpg");
+}
+@-webkit-keyframes myanim{
+  from{
+   transform: rotateY(0deg) rotateX(20deg);
+  }
+  to{
+    transform:rotateY(360deg)
+      rotateX(20deg);
+
+  }
+}
