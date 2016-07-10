@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="todo.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <nav>
+      <div id="logo"></div>
+      <div id="heading">What To Do.........</div>
+    </nav>
+    <div id="content">
+      <div id="addItem">
+        <input autofocus="true" id="inputText" type="text" placeholder="Enter A New Task......">
+        <button type="button" onclick="addTodo()"><b>ADD</b></button>
+      </div>
+      <div id="listcontainer">
+        <div id="list">
+          <ul id="todosUL">
+          </ul>
+        </div>
+      </div>
+      <div id="buttonContainer">
+        <button type="button" id="clearCompleted"><b>CLEAR COMPLETED</b></button>
+        <button type="button" id="clearAll"><b>CLEAR ALL</b></button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="todo.js"></script>
+  </body>
+</html>
