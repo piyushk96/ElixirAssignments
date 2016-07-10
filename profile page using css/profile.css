@@ -1,0 +1,200 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  color: grey;
+}
+
+#background{
+  height: auto;
+  width: auto;
+  background-image: url("page-bg.jpg");
+  border: 1px solid black;
+}
+
+#innerbackground{
+  width:80%;
+  height: auto;
+  background-image: url("body-bg.png");
+  margin: auto;
+}
+
+#head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;;
+  padding: 30px;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+a{
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+#headlinks{
+  padding: 10px 0px;
+}
+
+#about{
+  padding: 20px 30px 0px;
+}
+
+.subheadcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.linkicon{
+  padding: 5px;
+}
+
+.division{
+  height: 7px;
+  background-image: url("divider.png");
+  background-repeat: repeat-x no-repeat;
+}
+
+#aboutcontent{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:0px 0px 30px 0px;
+}
+
+#profilepic{
+  width: 160px;
+  heigth: 160px;
+  border: 5px solid black;
+  margin:30px 0px 0px 0px;
+  flex-shrink: 4;
+}
+
+#aboutitem{
+  width:70%;
+  flex-shrink: 1;
+  margin:30px 0px 0px 30px;
+}
+
+#aboutitem h3{
+    padding-bottom: 20px;
+}
+
+#abouticonContainer{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 30px 0px 0px 0px;
+}
+
+.aboutIcon{
+  margin: 10px;
+}
+
+#experience{
+  padding: 0px 30px;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.experienceitem{
+  width: 30%;
+  padding: 30px 10px;
+}
+
+.experienceitem h4{
+  padding-bottom: 20px;
+}
+
+#work{
+  padding: 0px 30px;
+}
+
+#images{
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#images img{
+  padding: 10px;
+  height: 120px;
+  width: auto;;
+}
+
+#connect{
+  padding: 0px 30px;
+}
+
+input{
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+}
+
+form{
+  margin: 30px 0px;
+}
+
+.formitem{
+    margin: 20px 0px;
+}
+
+input[name="name"]{
+  background-image: url("icon-user.png");
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+  margin-left: 40px;
+  text-indent: 20px;
+  padding: 5px;
+}
+
+input[name="email"]{
+  background-image: url("icon-mail.png");
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+  margin-left: 40px;
+  text-indent: 20px;
+  padding: 5px;
+}
+
+textarea{
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  border: none;
+  background-image: url("icon-message.png");
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+  margin-left: 24px;
+  text-indent: 20px;
+  padding: 5px;
+}
+
+input[type="submit"]{
+  background-color: rgba(0,0,0,0.3);
+  color: grey;
+  float: right;
+  padding:5px 10px;
+}
+
+#connectitem{
+  margin: 50px 0px;
+}
+
+#connectitem h3{
+  padding: 50px 0px 20px;
+}
