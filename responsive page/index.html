@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      ul{
+        list-style-type: none;
+      }
+      body{
+        background-image: url('bg.png');
+        border: 1px solid transparent;
+        line-height: 1;
+      }
+      #pageContainer{
+        margin: auto;
+        width: 95%;
+      }
+      #topdesign{
+        background-image: url('rag.png');
+        height: 34px;
+        background-repeat: no-repeat repeat-x;;
+      }
+      #logoBack{
+        background-image: url('logo-bg.png');
+        height: 284px;
+        width: 31%;
+        background-repeat: no-repeat;
+        background-position: 50% 0px;
+        float: left;
+        padding: 116px 0px 0px;
+        box-sizing: border-box;
+      }
+      #logo{
+        background-image: url('logo.png');
+        width:146px;
+        height: 67px;
+        background-repeat: no-repeat;
+        margin: auto;
+      }
+      nav{
+        width: 67%;
+        margin: 50px 0px 20px;
+        float: right;
+      }
+      b{
+        font: bold 16px "Book Antiqua", "Palatino Linotype", Georgia, serif;
+      }
+      nav li{
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+        color: #890101;
+        margin-right: 3%;
+        background-image: url('ornament.png');
+        background-repeat: no-repeat;
+        background-position: 0px 100%;
+        padding: 10px 0px 40px;
+      }
+      nav li:hover{
+        background-position: 50% 100%;
+        color: red;
+      }
+      #content{
+        width: 67%;
+        margin: 10px 0px;
+        float: right;
+        line-height: 1.4;
+      }
+      #content h2{
+        text-align: center;
+        font: normal 2em "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+        margin-bottom: 15px;
+      }
+      #imageSection{
+        width: 67%;
+        float: right;
+      }
+      #imageSectionHead{
+        background-image: url("ornament.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position: 0% 50%;
+        margin: 20px 0px;
+      }
+      #imageSection h2{
+        background-color: #e6e6e6;
+        display: inline-block;
+        text-align: center;
+        width: 220px;
+        font-weight: normal;
+      }
+      #imageSection ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      #imageSection li{
+        width: 14.2%;
+        margin: 0px 2.4% 20px 0px;
+        display: inline-block;
+        text-align: center;
+        color: #890101;
+      }
+      #imageSection #img6{
+        margin: 0px 0px 20px;
+      }
+      #imageSection img{
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+        box-shadow: 0 2px 4px black;
+        margin-bottom: 10px;
+      }
+      #footer{
+        width: 67%;
+        float: right;
+        text-align: center;
+      }
+      #footer h5{
+        width: 35%;
+        background-image: url('ornament.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0px;
+        padding:45px 10px;
+        margin: auto;
+        line-height: 1.5em;
+      }
+      span{
+        color: #890101;
+      }
+
+      @media screen and (max-width: 1300px){
+        nav{
+          float:none;
+          margin: 30px auto;
+        }
+        nav ul{
+          background-image: url("ornament.png");
+          background-repeat: no-repeat;
+          padding-top: 40px;
+        }
+        nav li{
+          width: 100%;
+        }
+        nav li:hover{
+          background-position: 50% 100%;
+          color: red;
+        }
+        #navigationWrapper{
+          width: 31%;
+          display: inline-block;
+          float: left;
+        }
+        #logoBack{
+          width: auto;
+          float: none;
+        }
+        #imageSection ul{
+          flex-wrap: wrap;
+        }
+        #imageSection li{
+          width: 30%;
+        }
+        #imageSection #img3{
+          margin: 0px 0px 20px;
+        }
+        #content{
+          margin: 120px 0px 0px;
+        }
+        #footer h5{
+          width: 100%;
+          padding: 45px 0px;
+        }
+        @media screen and (max-width:600px){
+          #logoBack{
+            background: none;
+            padding: 0px;
+            height: 67px;
+          }
+          #navigationWrapper{
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          #content,#imageSection,#footer,#navigationWrapper{
+            float: none;
+            width: 100%;
+          }
+          nav{
+            margin: 0px;
+            width: 100%;
+          }
+          nav ul{
+            background-image: url("ornament.png");
+            background-repeat: no-repeat;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+          }
+          nav li{
+            width: 29%;
+            display: inline-block;
+            padding: 10px 0px 30px;
+          }
+          nav li:hover{
+            color: red;
+            background-position: 0px 100%;
+          }
+          #content{
+            margin: 10px 0px;
+          }
+        }
+        @media screen and (max-width: 400px) {
+          #imageSection li{
+            width: 47%;
+          }
+          #imageSection #img3{
+            margin: 0px 2.4% 20px 0px;
+          }
+          #imageSection #img2{
+            margin: 0px 0px 20px;
+          }
+          #imageSection #img4{
+           margin: 0px 0px 20px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topdesign"></div>
+    <div id="pageContainer">
+      <div id="navigationWrapper">
+        <div id="logoBack">
+          <div id="logo"></div>
+        </div>
+        <nav>
+          <ul>
+            <li><h6>THE</h6><b>WEBLOGUE</b></li>
+            <li><h6>BACK</h6><b>ISSUES</b></li>
+            <li><h6>ABOUT</h6><b>OUR PAPER</b></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="content">
+        <h2>&quot;Give me problems, give me work.&quot;</h2>
+        <p>
+          In the year 1878 I took my degree of Doctor of Medicine of the University of London, and
+          proceeded to Netley to go through the course prescribed for surgeons in the army. Having
+          completed my studies there, I was duly attached to the Fifth Northumberland Fusiliers as
+          Assistant Surgeon. The regiment was stationed in India at the time, and before I could
+          join it, the second Afghan war had broken out. On landing at Bombay, I learned that my
+          corps had advanced through the passes, and was already deep in the enemy’s country.
+        </p>
+      </div>
+      <div id="imageSection">
+        <div id="imageSectionHead">
+          <h2>Victors &amp; Villians</h2>
+        </div>
+        <ul>
+          <li><img src="f-holmes.jpg"/><h6>SHERLOCK</h6><b>HOLMES</b></li>
+          <li id="img2"><img src="f-watson.jpg"/><h6>DR JOHN HEMISH</h6><b>WATSON</b></li>
+          <li id="img3"><img src="f-mycroft.jpg"/><h6>MYCROFT</h6><b>HOLMES</b></li>
+          <li id="img4"><img src="f-moriarty.jpg"/><h6>PROF JAMES</h6><b>MORIARTY</b></li>
+          <li><img src="f-adler.jpg"/><h6>IRENE</h6><b>ADLER</b></li>
+          <li id="img6"><img src="f-winter.jpg"/><h6>JAMES</h6><b>WINTER</b></li>
+        </ul>
+      </div>
+      <div id="footer">
+        <h5>Illustrations by <span>Sidney Paget</span>, words by <span>Sir Arthur Conan Doyle.</span>
+        <br>What remains is by <span>Ethan Marcotte.</span></h5>
+      </div>
+
+    </div>
+  </body>
+</html>
