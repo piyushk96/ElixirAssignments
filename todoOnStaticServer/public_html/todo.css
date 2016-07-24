@@ -1,0 +1,101 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+nav{
+  background-color: #9C27B0;
+  border: 3px solid black;
+  width: 100%;
+  display: flex;
+}
+#logo{
+  background-image: url("todo_logo.png");
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px 0px 10px 5%;
+}
+#heading{
+  display: inline-block;
+  width:80%;
+  color:yellow;
+  font-size: 80px;
+  margin:10px 0px;
+  text-align: center;
+  float: right;
+  padding: 0px 4% 0px 0px;
+}
+#content{
+  border: 3px solid black;
+  width: 100%;
+  background-color: rgba(192,237,89,.87);
+}
+#addItem{
+  padding: 30px 0px 30px 18%;
+  border-bottom: 3px dashed darkgreen ;
+}
+#inputText{
+  width: 60%;
+  height: 40px;
+  color: blue;
+  padding: 0px 10px;
+  border: 2px solid red;
+  font-size: 20px;
+  display: inline-block;
+  float: left;
+  outline: none;
+}
+button{
+  width: 80px;
+  height: 40px;
+  display: inline-block;
+  font-size: 30px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  background-color: #2196f3;
+  margin-left: 5%;
+  outline: none;
+}
+#listcontainer{
+  height: 290px;
+  border-bottom: 3px dashed darkgreen ;
+}
+#list{
+  overflow-y: scroll;
+  width: 90%;
+  height: 90%;
+  margin: 30px auto;
+}
+ul{
+  list-style: none;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+li{
+  border: 2px solid #3F51B5;
+  width: 97%;
+  margin-bottom: 10px;
+  background: lightgreen;
+}
+#buttonContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px
+}
+#clearCompleted{
+  width: 130px;
+  font-size: 15px;
+}
+#clearAll{
+  margin-right: 5%;
+  font-size: 15px;
+}
+input[type="checkbox"]{
+  margin: 10px;
+  zoom: 1.5;
+}
