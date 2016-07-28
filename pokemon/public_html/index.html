@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img id="logo" src="images/logo.png">
+    <div id="page">
+        <img id="ash" src="images/ash.png">
+        <div id="content">
+            <button type="button" id="newGame">New Game</button>
+            <button type="button" id="instruct">Instructions</button>
+            <button type="button" id="ShowLeaderBoard">Leader Board</button>
+        </div>
+        <div id="leaderBoard">
+            <table border="1">
+                <tr>
+                    <th id="rank">Rank</th>
+                    <th>Player</th>
+                    <th id="tableScore">Score</th>
+                </tr>
+            </table>
+            <button type="button" class="back">Back</button>
+        </div>
+        <div id="userDetail">
+            <h1>Choose Your Pokemon!!!!!!</h1>
+            <ul id="playerContainer">
+                <li><img src="images/players/pikachu.png"></li>
+                <li><img src="images/players/charmander.png"></li>
+                <li><img src="images/players/squirtle.png"></li>
+                <li><img src="images/players/bulbasaur.png"></li>
+            </ul>
+            <h1>Player Name</h1>
+            <input type="text" id="playerName" autofocus required>
+            <button type="button" id="playGame">Go To Game</button>
+            <button type="button" class="back">Back</button>
+        </div>
+        <div id="instructions">
+            <h1>Instructions</h1>
+            <p>
+                Take your pokemon to the pokeball saving from the enemy pokemons. Cross different levels to score high.
+            </p>
+            <h1>Controls</h1>
+            <div id="control">
+                <div><img src="images/leftarrow.png"><span>Move Left</span></div>
+                <div><img src="images/rightarrow.png"><span>Move Right</span></div>
+            </div>
+            <button type="button" class="back">Back</button>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
