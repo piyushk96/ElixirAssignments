@@ -122,11 +122,11 @@ while(temp>1)     ///refreshing speed on reloading
 
 $('#score').html("SCORE <br><span>"+score+"</span>");
 
-$('#playAgain').click(function () {
+$('#playAgain').on('touchstart click', function () {
     window.location.href = '/';
 });
 
-$('#nextLevel').click(function () {
+$('#nextLevel').on('touchstart click', function () {
     $('#alertBox').hide();
     $('#score').show();
     level++;
